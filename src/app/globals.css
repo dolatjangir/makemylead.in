@@ -24,3 +24,126 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* ═══════════════════════════════════════════════════════════════════════
+   global.css — MakeMyLeads Design Tokens
+   All colour values live here. Use var(--token) everywhere else.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+:root {
+
+  /* ── Core Brand ───────────────────────────────────────────────────── */
+  --blue:            #086ad8;   /* primary action / links               */
+  --blue-dark:       #054fa0;   /* hover state for --blue               */
+  --navy:            #002fa6;   /* deep accent                          */
+  --navy-deep:       #072a83;   /* hero gradient mid-stop               */
+  --warm:            #d2a98e;   /* terracotta / highlight               */
+  --warm-dark:       #c4967a;   /* hover state for --warm               */
+
+  /* ── Neutrals ─────────────────────────────────────────────────────── */
+  --ink:             #0d0f1a;   /* primary dark (headings, dark bg)     */
+  --body-text:       #1a1a2e;   /* body copy colour                     */
+  --paper:           #f5f4f0;   /* light section background             */
+  --mid:             #696969;   /* secondary / muted text               */
+  --white:           #ffffff;
+  --card-dark:       #1a1f36;   /* dark card background                 */
+  --footer-bg:       #0a0b14;   /* footer background                    */
+  --dropdown-fg:     #444444;   /* dropdown link text                   */
+  --light-gray:      #cccccc;   /* inactive toggle / border             */
+
+  /* ── White with Opacity ───────────────────────────────────────────── */
+  --white-03:  rgba(255, 255, 255, 0.03);
+  --white-04:  rgba(255, 255, 255, 0.04);
+  --white-05:  rgba(255, 255, 255, 0.05);
+  --white-06:  rgba(255, 255, 255, 0.06);
+  --white-07:  rgba(255, 255, 255, 0.07);
+  --white-08:  rgba(255, 255, 255, 0.08);
+  --white-09:  rgba(255, 255, 255, 0.09);
+  --white-10:  rgba(255, 255, 255, 0.10);
+  --white-12:  rgba(255, 255, 255, 0.12);
+  --white-14:  rgba(255, 255, 255, 0.14);
+  --white-15:  rgba(255, 255, 255, 0.15);
+  --white-16:  rgba(255, 255, 255, 0.16);
+  --white-20:  rgba(255, 255, 255, 0.20);
+  --white-25:  rgba(255, 255, 255, 0.25);
+  --white-30:  rgba(255, 255, 255, 0.30);
+  --white-40:  rgba(255, 255, 255, 0.40);
+  --white-45:  rgba(255, 255, 255, 0.45);
+  --white-50:  rgba(255, 255, 255, 0.50);
+  --white-55:  rgba(255, 255, 255, 0.55);
+  --white-60:  rgba(255, 255, 255, 0.60);
+  --white-70:  rgba(255, 255, 255, 0.70);
+  --white-75:  rgba(255, 255, 255, 0.75);
+  --white-80:  rgba(255, 255, 255, 0.80);
+  --white-85:  rgba(255, 255, 255, 0.85);
+
+  /* ── Black with Opacity ───────────────────────────────────────────── */
+  --black-07:  rgba(0, 0, 0, 0.07);
+  --black-08:  rgba(0, 0, 0, 0.08);
+  --black-09:  rgba(0, 0, 0, 0.09);
+  --black-12:  rgba(0, 0, 0, 0.12);
+  --black-15:  rgba(0, 0, 0, 0.15);
+  --black-30:  rgba(0, 0, 0, 0.30);
+
+  /* ── Blue with Opacity ────────────────────────────────────────────── */
+  --blue-03:   rgba(8, 106, 216, 0.03);
+  --blue-08:   rgba(8, 106, 216, 0.08);
+  --blue-20:   rgba(8, 106, 216, 0.20);
+  --blue-25:   rgba(8, 106, 216, 0.25);
+  --blue-40:   rgba(8, 106, 216, 0.40);
+
+  /* ── Warm with Opacity ────────────────────────────────────────────── */
+  --warm-08:   rgba(210, 169, 142, 0.08);
+  --warm-12:   rgba(210, 169, 142, 0.12);
+  --warm-15:   rgba(210, 169, 142, 0.15);
+  --warm-30:   rgba(210, 169, 142, 0.30);
+
+  /* ── Contextual Opacity Aliases ───────────────────────────────────── */
+  --paper-97:      rgba(245, 244, 240, 0.97);  /* nav glass bg (scrolled)  */
+  --body-text-75:  rgba(26,  26,  46,  0.75);  /* nav link text (scrolled)  */
+  --mid-80:        rgba(105, 105, 105, 0.80);  /* testimonial role text     */
+
+  /* ── Gradients ────────────────────────────────────────────────────── */
+  --gradient-hero:          linear-gradient(150deg, #0d0f1a 0%, #072a83 55%, #086ad8 100%);
+  --gradient-blue:          linear-gradient(135deg, #086ad8, #002fa6);
+  --gradient-blue-section:  linear-gradient(135deg, #086ad8 0%, #002fa6 100%);
+  --gradient-text-white:    linear-gradient(90deg,  #ffffff 40%, rgba(255, 255, 255, 0.50));
+}
+
+/* 🔥 Gradient Text */
+.gradient-text {
+  background: var(--gradient-text-white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🔥 Glass Card */
+.glass {
+  background: var(--white-05);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--white-10);
+}
+
+/* 🔥 Primary Button */
+.btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  transition: 0.3s ease;
+}
+.btn-primary:hover {
+  background: var(--blue-dark);
+}
+
+/* 🔥 Secondary Button */
+.btn-secondary {
+  border: 1px solid var(--white-20);
+  color: var(--white);
+}
+.btn-secondary:hover {
+  background: var(--white);
+  color: var(--ink);
+}
+
+/* 🔥 Section Spacing */
+.section {
+  padding: 80px 20px;
+}
