@@ -13,10 +13,10 @@ const navItems: NavItem[] = [
     label: "Company",
     href: "#",
     children: [
-      { label: "About Us", href: "/about-us" },
-      { label: "Contact Us", href: "/contact-us" },
-      { label: "Why Choose Us", href: "/why-choose-us" },
-      { label: "FAQs", href: "/faqs" },
+      { label: "About Us", href: "/company/about-us" },
+      { label: "Contact Us", href: "/company/contact-us" },
+      { label: "Why Choose Us", href: "/company/why-choose-us" },
+      { label: "FAQs", href: "/company/faqs" },
     ],
   },
   {
@@ -26,7 +26,7 @@ const navItems: NavItem[] = [
       { label: "Education", href: "/industries/education" },
       { label: "Medical", href: "/industries/medical" },
       { label: "Finance", href: "/industries/finance" },
-      { label: "Real Estate", href: "/industries/real-estate" },
+      { label: "Real Estate", href: "/industries/realestate" },
     ],
   },
   { label: "Services", href: "/our-services" },

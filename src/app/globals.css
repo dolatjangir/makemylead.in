@@ -147,3 +147,18 @@ body {
 .section {
   padding: 80px 20px;
 }
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(36px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100%  { transform: translateX(-50%); }
+        }
